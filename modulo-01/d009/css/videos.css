@@ -1,0 +1,19 @@
+/* Apesar que são quase o mesmo, prefiro deixar separado */
+body {
+    background-color: #1D1D1D;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+   text-align: center; 
+}
+
+div {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

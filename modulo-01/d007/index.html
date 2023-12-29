@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+    <title>Imagem flexivel</title>
+</head>
+<body>
+    <h1>Imagens flexiveis</h1>
+    <p>Aumente o tamanho da tela do seu navegador para ver a imagem com maior qualidade! &#x1F384</p>
+
+    <picture>
+        <source media="(max-width: 650px )" srcset="images/noel_p.jpg" type="image/jpg">
+
+        <source media="(max-width: 1150px)" srcset="images/noel_m.jpg" type="image/jpg">
+
+        <img src="images/noel_g.jpg" alt="foto do papai noel">
+    </picture>
+    <hr>
+    <picture>
+
+        <source media="(min-width: 1150px )" srcset="images/paisagem-g.png" type="image/png">
+
+        <source media="(min-width: 700px)" srcset="images/paisagem-m.png" type="image/png">
+
+        <img src="images/paisagem-p.png" alt="foto de paisagem">
+    </picture>
+</body>
+</html>
