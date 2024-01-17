@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(../pacote-projeto-d010/fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url(../pacote-projeto-d010/fontes/BebasNeue-Regular.ttf);
+}
+
+/* Resetar as configs padrões dos navegadores */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #84e1ad;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-shadow: 4px 1px 2px rgba(0,0,0,0.3);
+    
+    position: relative;
+    height: 200px;
+    padding: 20px;
+
+    text-align: center;
+    color: white;
+
+    background-image: linear-gradient( 180deg, #3ddb84, #1a5c38);
+}
+
+#titulo {
+    font-family: 'bebas', sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#subtitulo {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+nav {
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+li {
+    display: inline; /* Ficar na mesma linha ao invés de pular */
+    padding-left: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.a_main {
+    color: #1a5c38;
+}
+
+.a_main_clip::after {
+    content: ' 📎';
+}
+
+main {
+    background-color: white;
+    text-align: left;
+    width: 65%; /* Vai ocupar 65% do body e vai diminuindo automaticamente dependendo do tamanho da tela */
+    
+    padding: 25px;
+    margin: auto;
+
+    box-shadow: 0px 0px 25px 3px #0000005e;
+    border-radius: 0px 0px 20px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+article > picture > img {
+    display: flex;
+    margin: auto;
+    /*width: 90%; - Poderia usar, mas as imagens vão ficar maiores do que deveria */
+
+}
+
+
+#titulo_artigo {
+    font-size: 25px;
+    font-family: 'android', sans-serif;
+    color: #185b36;
+}
+
+.p_artigo {
+    text-indent: 15px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.h2_article {
+    font-family: 'android', sans-serif;
+    color: #185b36;;
+
+    background-image: linear-gradient(90deg, #c5ead5, white);
+
+    margin-bottom: 10px;
+}
+
+#video {
+    height: 450px;
+    width: 100%;
+    background-color: #1a5c38;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+iframe {
+    height: 90%;
+    width: 90%;
+    padding: 20px;
+}
+
+#extra {
+    background-color: #2fa866;
+    margin-bottom: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#p_baixo {
+    padding-bottom: 25px;
+}
+
+.extra {
+    background-color: #c5ebd6;
+    border-radius: 5px 5px;
+    box-shadow: 0px 0px 11px 1px #0000005d
+}
+
+.extra > p {
+    margin-top: 0px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+.ul_extra {
+    column-count: 2;
+    margin-bottom: 20px;
+}
+
+.ul_extra > li {
+    display: block;
+}
+
+.ul_extra > li::before {
+    content: "✓  ";
+}
+
+footer {
+    background-color: #1a5c38;
+    color: white;
+    height: auto;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer > p {
+    text-align: center;
+    padding: 10px;
+}
+
