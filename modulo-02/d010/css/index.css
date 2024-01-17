@@ -193,3 +193,7 @@ footer > p {
     padding: 10px;
 }
 
+footer > p > a {
+    font-weight: bolder ;
+}
+
